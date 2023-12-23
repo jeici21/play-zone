@@ -11,7 +11,7 @@ const Portada = () => {
           dejarlos a su disposición para que puedan entretenerse un poco con ellos. ¡Espero que estos
           juegos te entretengan por un rato!</h5>
       </div>
-      <div class="row justify-content-center" id="proyectos"></div>
+      <div class="row justify-content-center pb-5" id="proyectos"></div>
     </div>
   `)
   $.each(proyectos, (_, proyecto) => {

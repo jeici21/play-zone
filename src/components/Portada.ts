@@ -19,7 +19,7 @@ const Portada = () => {
       <div class="col-md-4 g-3">
         <img src=${proyecto.img} alt="Imagen del proyecto" class="w-100 rounded-3 ${styles.proyectoImg}">
         <h4>${proyecto.nombre}</h4>
-        <a href=${proyecto.url} class="btn btn-secondary">Jugar</a>
+        <a href=${proyecto.url} class="btn btn-secondary" target="_blank">Jugar</a>
       </div>
     `)
   })

@@ -4,8 +4,9 @@ import styles from '../styles/Portada.module.css'
 
 const Portada = () => {
   $('#app').append(/*html*/`
-    <div class="container-fluid text-bg-dark text-center">
-      <div class="col-md-6 offset-md-3 py-5">
+    <div class="container-fluid bg-black text-white text-center position-relative">
+      <div class="position-absolute rounded-circle bg-dark z-0 d-none d-md-block ${styles.circle}"></div>
+      <div class="col-md-6 offset-md-3 py-5 position-relative z-1">
         <h1 class=${styles.titulo}>¡Bienvenido!</h1>
         <h5 class="pt-4">Esta es mi zona de juegos, en donde reúno proyectos pequeños para mostrarlos al mundo y
           dejarlos a su disposición para que puedan entretenerse un poco con ellos. ¡Espero que estos

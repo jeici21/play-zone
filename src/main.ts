@@ -5,7 +5,7 @@ import './style.css'
 import $ from 'jquery'
 
 declare global {
-  interface Window { $: JQueryStatic;}
+  interface Window { $: JQueryStatic; }
 }
 
 window.$ = $;

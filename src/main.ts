@@ -4,6 +4,12 @@ import 'bootstrap/dist/js/bootstrap.bundle.min'
 import './style.css'
 import $ from 'jquery'
 
+declare global {
+  interface Window { $: JQueryStatic;}
+}
+
+window.$ = $;
+
 $(() => {
   App()
 })

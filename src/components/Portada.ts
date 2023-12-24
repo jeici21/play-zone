@@ -1,4 +1,3 @@
-import $ from 'jquery'
 import { proyectos } from '../data/proyectos'
 import styles from '../styles/Portada.module.css'
 

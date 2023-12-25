@@ -7,9 +7,9 @@ const Portada = () => {
       <div class="position-absolute rounded-circle bg-dark z-0 d-none d-md-block ${styles.circle}"></div>
       <div class="col-md-6 offset-md-3 py-5 position-relative z-1">
         <h1 class=${styles.titulo}>¡Bienvenido!</h1>
-        <h5 class="pt-4">Esta es mi zona de juegos, en donde reúno proyectos pequeños para mostrarlos al mundo y
-          dejarlos a su disposición para que puedan entretenerse un poco con ellos. ¡Espero que estos
-          juegos te entretengan por un rato!</h5>
+        <h5 class="pt-4">Esta es mi zona de juegos, en donde reúno proyectos pequeños para mostrarlos al 
+          mundo y dejarlos a su disposición para que puedan entretenerse un poco con ellos. ¡Espero que 
+          estos juegos te entretengan por un buen rato!</h5>
       </div>
       <div class="row justify-content-center pb-5" id="proyectos"></div>
     </div>

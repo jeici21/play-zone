@@ -10,6 +10,4 @@ declare global {
 
 window.$ = $;
 
-$(() => {
-  App()
-})
+$(() => App())

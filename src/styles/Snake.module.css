@@ -4,34 +4,8 @@
 }
 
 .board {
-  display: grid;
   grid-template-columns: repeat(10, 1fr);
   font-family: 'Cascadia Code', monospace;
-}
-
-.start,
-.boardInfo {
-  font-size: 25px;
-}
-
-.gameOverFalse {
-  display: none;
-}
-
-.gameOverTrue {
-  display: block;
-}
-
-.boardInfo {
-  display: flex;
-  justify-content: space-between;
-  margin-top: 10px;
-}
-
-.start {
-  background-color: #f35a65;
-  border: none;
-  color: white;
 }
 
 .scoreBoard {

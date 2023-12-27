@@ -8,14 +8,14 @@ export const Snake = /*html*/`
       <div class="modal-dialog">
         <div class="modal-content">
           <div class="modal-header">
-            <h1 class="modal-title fs-5" id="exampleModalLabel">Snake</h1>
+            <h1 class="modal-title fs-1" id="exampleModalLabel">Snake</h1>
             <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
           </div>
           <div class="modal-body">
-            <div id="board" class=${styles.board}></div>
-            <div class=${styles.boardInfo}>
+            <div id="board" class="d-grid ${styles.board}"></div>
+            <div class="fs-2 d-flex justify-content-between mt-1">
               <div>Score: <div id="scoreBoard" class=${styles.scoreBoard}></div></div>
-              <button id="start" class=${styles.start}>Start</button>
+              <button id="start" class="fs-5 btn btn-danger">Start</button>
             </div>
             <div id="gameOver" class=${styles.gameOver}>Game Over</div>
           </div>
@@ -86,7 +86,7 @@ const SetupSnake = () => {
   }
 
   const gameOver = () => {
-    $('#gameOver').removeClass(styles.gameOverFalse).addClass(styles.gameOverTrue)
+    $('#gameOver').removeClass('d-none').addClass('d-block')
     clearInterval(moveInterval!)
     $('#start').prop('disabled', false)
   }
@@ -145,7 +145,7 @@ const SetupSnake = () => {
 
   const startGame = () => {
     setGame()
-    $('#gameOver').removeClass(styles.gameOverTrue).addClass(styles.gameOverFalse)
+    $('#gameOver').removeClass('d-block').addClass('d-none')
     $('#start').prop('disabled', true)
     drawSnake()
     updateScore()

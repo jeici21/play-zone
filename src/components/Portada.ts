@@ -1,5 +1,6 @@
 import { proyectos } from '../data/proyectos'
 import styles from '../styles/Portada.module.css'
+import { Snake } from './Snake'
 
 const Portada = () => {
   $('#app').append(/*html*/`
@@ -13,13 +14,14 @@ const Portada = () => {
       </div>
       <div class="row justify-content-center pb-5" id="proyectos"></div>
     </div>
+    ${Snake}
   `)
   $.each(proyectos, (_, proyecto) => {
     $('#proyectos').append(/*html*/`
       <div class="col-md-4 g-3">
         <img src=${proyecto.img} alt="Imagen del proyecto" class="w-100 rounded-3 ${styles.proyectoImg}">
         <h4>${proyecto.nombre}</h4>
-        <a href=${proyecto.url} class="btn btn-secondary" target="_blank">Jugar</a>
+        <button class="btn btn-secondary" data-bs-toggle="modal" data-bs-target="#${proyecto.id}">Jugar</button>
       </div>
     `)
   })

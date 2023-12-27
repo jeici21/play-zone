@@ -14,13 +14,13 @@ export const Snake = /*html*/`
           <div class="modal-body">
             <div id="board" class="d-grid ${styles.board}"></div>
             <div class="fs-2 d-flex justify-content-between mt-1">
-              <div>Score: <div id="scoreBoard" class=${styles.scoreBoard}></div></div>
-              <button id="start" class="fs-5 btn btn-danger">Start</button>
+              <div>Score: <div id="scoreBoard" class="d-inline-flex"></div></div>
+              <button id="start" class="fs-5 btn btn-danger">Iniciar</button>
             </div>
             <div id="gameOver" class=${styles.gameOver}>Game Over</div>
           </div>
           <div class="modal-footer">
-            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
           </div>
         </div>
       </div>

@@ -17,7 +17,7 @@ export const Snake = /*html*/`
               <div>Score: <div id="scoreBoard" class="d-inline-flex"></div></div>
               <button id="start" class="fs-5 btn btn-danger">Iniciar</button>
             </div>
-            <div id="gameOver" class=${styles.gameOver}>Game Over</div>
+            <div id="gameOver" class="fs-4 text-center">Game Over</div>
           </div>
           <div class="modal-footer">
             <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
